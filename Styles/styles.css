@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(../images/background/services\ background.jpg);
+
+}
+
+header{
+    margin-top: 25px;
+    height: 70px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:#2600FD; 
+    border-radius: 70px;
+    display: flex;
+    align-content: center;
+    gap: 25px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+.logo img{
+    height: 35px;
+    width: 35px;
+    margin-left: 16%;
+    margin-top: 16%;
+}
+.nav-link{
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.nav-link ul{
+
+    display: flex;
+    color: white;
+    gap: 30px;
+    list-style: none;
+}
+ul a{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+ul a:hover{
+    color: red;
+    cursor: pointer;
+    transition: 1.5s;
+}
+ul a:active{
+    color: greenyellow;
+}
+.button {
+    padding-top: 15px;
+    height: 20px;
+    width: 160px;
+    margin-left: 28px;
+    background-color: #34B7F4;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.button:hover{
+    background-color: red;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.button .r-btn{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
