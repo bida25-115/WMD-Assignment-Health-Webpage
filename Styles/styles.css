@@ -51,7 +51,7 @@ ul a{
     font-family: sans-serif;
 }
 ul a:hover{
-    color: red;
+    color:  rgb(32, 168, 17);
     cursor: pointer;
     transition: 1.5s;
 }
@@ -60,15 +60,15 @@ ul a:active{
 }
 .button {
     padding-top: 15px;
-    height: 20px;
-    width: 160px;
+    height: 15px;
+    width: 120px;
     margin-left: 28px;
     background-color: #34B7F4;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 15px;
 }
 .button:hover{
-    background-color: red;
+    background-color: rgb(18, 185, 24);
     transition: 0.5s;
     cursor: pointer;
     
@@ -81,6 +81,6 @@ ul a:active{
     font-family: sans-serif;
     margin-left: 10px;
     margin-top: 20px;
-}
 
+}
 
