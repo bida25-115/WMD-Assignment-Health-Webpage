@@ -3,84 +3,122 @@ body{
     padding: 0px;
     box-sizing: border-box;
     background-image: url(../images/background/services\ background.jpg);
-
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-header{
-    margin-top: 25px;
-    height: 70px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color:#2600FD; 
-    border-radius: 70px;
-    display: flex;
-    align-content: center;
-    gap: 25px;
+/* Ensure all images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
 }
-.logo{
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    margin-left: 10%;
-    margin-top: 10px;
-    border-radius: 25px;
-}
-.logo img{
-    height: 35px;
-    width: 35px;
-    margin-left: 16%;
-    margin-top: 16%;
-}
-.nav-link{
-    margin-left: 20%;
-    margin-top: 10px;
-}
-.nav-link ul{
 
-    display: flex;
-    color: white;
-    gap: 30px;
-    list-style: none;
+/* Header & Navbar overrides for Bootstrap */
+.navbar {
+    margin-top: 0;
+    border-radius: 0;
 }
-ul a{
-    color: white;
-    text-decoration: none;
-    font-size: medium;
+
+.navbar-brand img {
+    border-radius: 50%;
+    height: 30px !important;
+}
+
+.nav-link {
     font-weight: bolder;
     font-family: sans-serif;
 }
-ul a:hover{
-    color:  rgb(32, 168, 17);
-    cursor: pointer;
+
+.nav-link:hover {
+    color: rgb(32, 168, 17) !important;
     transition: 1.5s;
 }
-ul a:active{
-    color: greenyellow;
-}
-.button {
-    padding-top: 15px;
-    height: 15px;
-    width: 120px;
-    margin-left: 28px;
-    background-color: #34B7F4;
-    margin-top: 20px;
-    border-radius: 15px;
-}
-.button:hover{
-    background-color: rgb(18, 185, 24);
-    transition: 0.5s;
-    cursor: pointer;
-    
-}
-.button .r-btn{
-    color: white;
-    text-decoration: none;
-    font-size: medium;
-    font-weight: bolder;
-    font-family: sans-serif;
-    margin-left: 10px;
-    margin-top: 20px;
 
+/* Footer Responsive */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.footerContent1, .footerContent2, .footerContent3, .footerContent4, .footerContent5 {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* Main content text color for visibility on background */
+main {
+    color: white;
+}
+
+/* Card styling for forms */
+.card {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Tablets and below */
+@media (max-width: 991px) {
+    .footer-container {
+        gap: 15px;
+    }
+
+    .footerContent1, .footerContent2, .footerContent3, .footerContent4, .footerContent5 {
+        flex: 1 1 45%;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footerContent1, .footerContent2, .footerContent3, .footerContent4, .footerContent5 {
+        flex: 100%;
+        min-width: auto;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small mobile phones */
+@media (max-width: 576px) {
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 1.2rem;
+    }
+
+    main h3 {
+        font-size: 1rem;
+    }
+
+    .navbar-brand img {
+        height: 25px !important;
+    }
 }
 

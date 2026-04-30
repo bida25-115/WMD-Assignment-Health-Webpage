@@ -3,118 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOTS-HEALTHCARE HUB</title>
-    <link rel="stylesheet" href="../Style/styles.css">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-
-            <div class="logo">
-                <img src="../images/website logo/background image.png" alt="Logo" style="">
-            </div>
-
-                <ul class="nav-link">
-                    <li><a href="../index.html">Landing page</a></li>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
+    <!-- Responsive Navbar with Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2600FD;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/website logo/background image.png" alt="Logo" height="30" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Landing page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-info text-white fw-bold ms-lg-2" href="login.html">Login</a>
+                    </li>
                 </ul>
-
-                <div>
-                    <button>
-                        Login
-                    </button>
-                </div>
-
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <div class="main-bdy">
+    <main class="container-fluid py-4">
+        <div class="main-bdy text-center mb-4">
             <h1>OUR SERVICES</h1>
             <h2>YOUR HEALTH IS OUR PRIORITY</h2>
-            <p>
-                .QUALITY HEALTH CARE <br> .EMERGENCY CARE <br> .MATERNITY & CHILD CARE <br> .OUT PATIENT SERVICES
-            </p>
-            <p>
-                OPEN<br>24 HOURS
-            </p>
-            <img src="../images/icons/ICONS/services-page/medical staff.jpg" alt="Medical staff" style="height: 380px;">
+            <p>.QUALITY HEALTH CARE <br> .EMERGENCY CARE <br> .MATERNITY & CHILD CARE <br> .OUT PATIENT SERVICES</p>
+            <p>OPEN<br>24 HOURS</p>
+            <img src="../images/icons/ICONS/services-page/medical staff.jpg" alt="Medical staff" class="img-fluid" style="max-height: 380px;">
         </div>
-        <div class="online-consult">
-            <img src="../images/icons/ICONS/services-page/online doctor ap.jpg" alt="online consultation picture" style="height: 100px;">
-            <p>Online Doctor<br>Consultation</p>
+        <div class="row g-4 justify-content-center">
+            <div class="online-consult col-6 col-md-3 text-center">
+                <img src="../images/icons/ICONS/services-page/online doctor ap.jpg" alt="online consultation picture" class="img-fluid" style="max-height: 100px;">
+                <p>Online Doctor<br>Consultation</p>
+            </div>
+            <div class="prescription col-6 col-md-3 text-center">
+                <img src="../images/icons/ICONS/services-page/prescription serv.jpg" alt="doctor prescribing medication to patient" class="img-fluid" style="max-height: 100px;">
+                <p>Prescription<br>service</p>
+            </div>
+            <div class="appointment-booking col-6 col-md-3 text-center">
+                <img src="../images/icons/ICONS/services-page/book appointment.jpg" alt="patient-booking appointment" class="img-fluid" style="max-height: 100px;">
+                <p>Appointment<br>Booking</p>
+            </div>
+            <div class="examination col-6 col-md-3 text-center">
+                <img src="../images/icons/ICONS/services-page/medical examination.jpg" alt="doctor examining patient" class="img-fluid" style="max-height: 100px;">
+                <p>Medical<br>Examination</p>
+            </div>
         </div>
-        <div class="prescription">
-            <img src="../images/icons/ICONS/services-page/prescription serv.jpg" alt="doctor prescribing medication to patient" style="height: 100px;">
-            <p>
-                Prescription<br>service
-            </p>
+        <div class="text-center mt-4">
+            <a href="../pages/explore.html" class="btn btn-primary">EXPLORE MORE</a>
         </div>
-        <div class="appointment-booking">
-            <img src="../images/icons/ICONS/services-page/book appointment.jpg" alt="patient-booking appointment" style="height: 100px;">
-            <p>Appointment<br>Booking</p>
-        </div>
-        <div class="examination">
-            <img src="../images/icons/ICONS/services-page/medical examination.jpg" alt="doctor examining patient" style="height: 100px;">
-            <p>Medical<br>Examination</p>
-        </div>
-        <a href="../pages/explore.html">
-            <button>
-                EXPLORE MORE
-            </button>
-        </a>
     </main>
 
-    <footer>
-        <div>
+    <footer class="footer-container">
+        <div class="footerContent1">
             <img src="../images/website logo/background image.png" alt="logo" style="height: 25px;">
-            <p>
-                BOTS-HEALTHCARE HUB
-            </p>
-            <P>
-                Making health care accessiable and efficient for everyone.
-            </P>
+            <p>BOTS-HEALTHCARE HUB</p>
+            <p>Making health care accessible and efficient for everyone.</p>
         </div>
-        <div>
+        <div class="footerContent2">
             <img src="../images/icons/landing page icons/For patient.png" alt="Patient icon" style="height: 25px;">
-            <p>
-                For Patients
-            </p>
-            <p>
-                Book Appointment(s) <br> Find Doctors <br> Health Records
-            </p>
+            <p>For Patients</p>
+            <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
         </div>
-        <div>
+        <div class="footerContent3">
             <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon" style="height: 25px;">
-            <p>
-                For Healthcare Providers
-            </p>
-            <p>
-                Manage Appointments <br> Invntory Tracking <br>
-            </p>
+            <p>For Healthcare Providers</p>
+            <p>Manage Appointments <br> Inventory Tracking <br></p>
         </div>
-        <div>
+        <div class="footerContent4">
             <img src="../images/icons/landing page icons/Contact us.png" alt="Contacts icon" style="height: 25px;">
-             <p>
-                Contacts
-            </p>
-            <p>
-                +267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)
-            </p>
+            <p>Contacts</p>
+            <p>+267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)</p>
         </div>
-        <div>
-            <p>
-                (c) 2026 Botswana Health Care Hub. All Rights Reserved.
-            </p>
+        <div class="footerContent5">
+            <p>(c) 2026 Botswana Health Care Hub. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

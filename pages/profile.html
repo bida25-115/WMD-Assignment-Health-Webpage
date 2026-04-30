@@ -3,210 +3,145 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOTS-HEALTHCARE HUB</title>
-    <link rel="stylesheet" href="../Style/styles.css">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-
-            <div class="logo">
-                <img src="../images/website logo/background image.png" alt="Logo" style="">
-            </div>
-
-                <ul class="nav-link">
-                    <li><a href="/"></a></li>
-                    <li><a href="pages/home.html">Home</a></li>
-                    <li><a href="pages/about.html">About us</a></li>
-                    <li><a href="pages/contact.html">Contact us</a></li>
-                    <li><a href="pages/services.html">Services</a></li>
-                    <li><a href="pages/feedback.html">Feedback</a></li>
+    <!-- Responsive Navbar with Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2600FD;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/website logo/background image.png" alt="Logo" height="30" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Landing page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
                 </ul>
-
             </div>
+        </div>
+    </nav>
 
-           
-        </nav>
-
-        <a href="../pages/profile.html">
-            <img src="../images/icons/ICONS/Profile-page/Profile icon.png" alt="Profile pic icon" style="height: 25px;">
-        </a>
-
-        <p>
-            Profile
-        </p>
-    </header>
-
-    <main>
-
-        <div>
-            <h3>
-                 PROFILE
-            </h3>
+    <main class="container-fluid py-4">
+        <div class="text-center">
+            <h3>PROFILE</h3>
         </div>
 
-        <div>
-            <p>
-                Profile picture
-            </p>
+        <div class="text-center my-3">
+            <p>Profile picture</p>
+            <img src="../images/icons/ICONS/Profile-page/Profile icon.png" alt="Profile icon" style="height: 60px;">
+            <p class="mt-2">Upload picture</p>
         </div>
 
-        <div>
-            <img src="../images/icons/ICONS/Profile-page/Profile icon.png" alt="Profile icon" style="height: 25px;">
-        </div>
-
-        <diV>
-            <p>
-                Upload picture
-            </p>
-        </diV>
-
-        <div>
-            <img src="../images/icons/ICONS/Profile-page/google.png" alt="google icon" style="height: 25px;">
-
-            <div>
-                <p>
-                    Add-Google
-                </p>
+        <div class="row g-3 justify-content-center text-center my-3">
+            <div class="col-6 col-md-3">
+                <img src="../images/icons/ICONS/Profile-page/google.png" alt="google icon" style="height: 25px;">
+                <p>Add-Google</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="../images/icons/ICONS/Profile-page/facebook.png" alt="facebook icon" style="height: 25px;">
+                <p>Add-facebook</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="../images/icons/ICONS/Profile-page/instagram.png" alt="Instagram icon" style="height: 25px;">
+                <p>Add-Instagram</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="../images/icons/ICONS/Profile-page/twitter.png" alt="Twitter icon" style="height: 25px;">
+                <p>Add-Twitter</p>
             </div>
         </div>
 
-        <div>
-            <img src="../images/icons/ICONS/Profile-page/facebook.png" alt="facebook icon" style="height: 25px;">
-            
-            <div>
-                <p>
-                    Add-facebook
-                </p>
-            </div>
-        </div>
-
-        <div>
-            <img src="../images/icons/ICONS/Profile-page/instagram.png" alt="Instagram icon" style="height: 25px">
-
-            <div>
-                <p>
-                    Add-Instagram
-                </p>
-            </div>
-        </div>
-
-        <div>
-            <img src="../images/icons/ICONS/Profile-page/twitter.png" alt="Twitter icon" style="height: 25px">
-
-            <div>
-                <p>
-                    Add-Twitter
-                </p>
-            </div>
-        </div>
-
-        <div>
-            <div>
-               
+        <div class="row justify-content-center my-4">
+            <div class="col-12 col-md-8">
                 <form>
-                    <label>
-                        User Name
-                    </label>
-                    <input type="text" User name="name" required> <br>
-
-                    <label>
-                         E-mail
-                        </label>
-                    <input type="email" class="email" name="email" placeholder="youremail@gmail.com"> <br>
-
-                    <label>
-                        Phone number
-                    </label>
-                    <input type="number" class="cellphone #" required> <br>
-
-                    <label>
-                        Set password
-                    </label>
-                    <input type="password" class="password" placeholder="Set new password"> <br>
-
-                    <label>
-                        Confirm password
-                    </label>
-                    <input type="password" class="password" placeholder="Confirm password"> <br>
-                
+                    <div class="mb-3">
+                        <label class="form-label">User Name</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">E-mail</label>
+                        <input type="email" class="form-control" name="email" placeholder="youremail@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phone number</label>
+                        <input type="number" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Set password</label>
+                        <input type="password" class="form-control" placeholder="Set new password">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Confirm password</label>
+                        <input type="password" class="form-control" placeholder="Confirm password">
+                    </div>
                 </form>
             </div>
         </div>
 
-        <div>
-            <h3>
-                Profile
-            </h3>
-
+        <div class="text-center my-3">
+            <h3>Profile</h3>
             <img src="../images/icons/ICONS/Profile-page/Profile icon.png" alt="Profile icon" style="height: 25px;">
         </div>
 
-        <div>
-            <p>
-                Get Help <img src="../images/icons/ICONS/Profile-page/information.png" alt="information icon" style="height: 25px;"> <br> Settings <img src="../images/icons/ICONS/Profile-page/settings.png" alt="settings icon" style="height: 25px;"> <br> Sign out <img src="../images/icons/ICONS/Profile-page/logout.png" alt="log out icon" style="height: 25px;">
-            </p>
+        <div class="text-center my-3">
+            <p>Get Help <img src="../images/icons/ICONS/Profile-page/information.png" alt="information icon" style="height: 25px;"> <br> Settings <img src="../images/icons/ICONS/Profile-page/settings.png" alt="settings icon" style="height: 25px;"> <br> Sign out <img src="../images/icons/ICONS/Profile-page/logout.png" alt="log out icon" style="height: 25px;"></p>
         </div>
 
-        <div>
-            <form>
-                <label>
-                    About me
-                </label>
-                <input type="text" class="More about me">
-            </form>
+        <div class="row justify-content-center my-3">
+            <div class="col-12 col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">About me</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <button>
-            Update information
-        </button>
+        <div class="text-center">
+            <button class="btn btn-primary">Update information</button>
+        </div>
     </main>
 
-    <footer>
-        <div>
+    <footer class="footer-container">
+        <div class="footerContent1">
             <img src="../images/website logo/background image.png" alt="logo" style="height: 25px;">
-            <p>
-                BOTS-HEALTHCARE HUB
-            </p>
-            <P>
-                Making health care accessiable and efficient for everyone.
-            </P>
+            <p>BOTS-HEALTHCARE HUB</p>
+            <p>Making health care accessible and efficient for everyone.</p>
         </div>
-        <div>
+        <div class="footerContent2">
             <img src="../images/icons/landing page icons/For patient.png" alt="Patient icon" style="height: 25px;">
-            <p>
-                For Patients
-            </p>
-            <p>
-                Book Appointment(s) <br> Find Doctors <br> Health Records
-            </p>
+            <p>For Patients</p>
+            <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
         </div>
-        <div>
+        <div class="footerContent3">
             <img src="../images/icons/landing page icons/Contact us.png" alt="Healthcare Providers icon" style="height: 25px;">
-            <p>
-                For Healthcare Providers
-            </p>
-            <p>
-                Manage Appointments <br> Invntory Tracking <br>
-            </p>
+            <p>For Healthcare Providers</p>
+            <p>Manage Appointments <br> Inventory Tracking <br></p>
         </div>
-        <div>
+        <div class="footerContent4">
             <img src="../images/icons/landing page icons/Contact us.png" alt="Contacts icon" style="height: 25px;">
-             <p>
-                Contacts
-            </p>
-            <p>
-                +267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)
-            </p>
+            <p>Contacts</p>
+            <p>+267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)</p>
         </div>
-        <div>
-            <p>
-                (c) 2026 Botswana Health Care Hub. All Rights Reserved.
-            </p>
+        <div class="footerContent5">
+            <p>(c) 2026 Botswana Health Care Hub. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

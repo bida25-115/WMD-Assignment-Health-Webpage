@@ -3,135 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOTS-HEALTHCARE HUB</title>
-    <link rel="stleshhet" href="../Style/styles.css">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-
-            <div class="logo">
-                <img src="../images/website logo/background image.png" alt="Logo" style="">
-            </div>
-
-                <ul class="nav-link">
-                    <li><a href="../index.html">Landing page</a></li>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
+    <!-- Responsive Navbar with Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2600FD;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/website logo/background image.png" alt="Logo" height="30" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Landing page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-info text-white fw-bold ms-lg-2" href="login.html">Log in</a>
+                    </li>
                 </ul>
-
-                <div>
-                    <a href="login.html">
-
-                    </a>
-                        <button>
-                            Log in
-                        </button>
-                    </a>
-                </div>
-
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
+    <main class="container-fluid py-4">
 
-        <div class="about">
+        <div class="about text-center">
             <h1>ABOUT US</h1>
         </div>
 
-        <div class="mission">
-            <h3>
-                MISSION
-            </h3>
-            <P>
-                Provide high quality, compassionate care to our society while improving their health.
-            </P>
+        <div class="mission text-center my-4">
+            <h3>MISSION</h3>
+            <p>Provide high quality, compassionate care to our society while improving their health.</p>
         </div>
 
-        <div class="goal">
-            <h3>
-                Goals
-            </h3>
-            <p>
-                To be communities first choice when it comes to health related issues and gain their trust.
-            </p>
+        <div class="goal text-center my-4">
+            <h3>Goals</h3>
+            <p>To be communities first choice when it comes to health related issues and gain their trust.</p>
         </div>
 
-        <div class="values">
-            <div>
-                <P>
-                    .Team work      .Empowerment <br> .Respect      .Reliable 
-                </P>
+        <div class="values text-center my-4">
+            <p>.Team work .Empowerment <br> .Respect .Reliable</p>
+        </div>
+
+        <div class="team-members text-center my-4">
+            <h3>Developers</h3>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    <p class="Roles">.Project manager <br> .UI/UX Designer <br> .Backend developer <br> .Frontend developer <br> .Copy writer <br> .Researcher</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="Names">Tshepi Keikanantses <br> Tshepi Keikanantses <br> Tshepi Keikanantses <br> Tshepi Keikanantses <br> Tshepi Keikanantses <br> Tshepi Keikanantses</p>
+                </div>
             </div>
-        </div>
-
-        <div class="team-members">
-            <h3>
-                Developers
-            </h3>
-            <p class="Roles">
-                .Project manager <br> .UI/UX Designer <br> .Backend developer <br> .Frontend developer <br> .Copy writter <br> .Reseacher
-            </p>
-            <p class="Names">
-                Tshepi Keikanantses <br>  Tshepi Keikanantses <br> Tshepi Keikanantses <br> Tshepi Keikanantses <br> Tshepi Keikanantses <br> Tshepi Keikanantses
-            </p>
-            <img src="../images/developers/Screenshot_20251205_113953_Gallery.jpg" alt="Developer's image" style="height: 150px">
-            <p>
-                Tshepi Keikanantses
-            </p>
+            <img src="../images/developers/Screenshot_20251205_113953_Gallery.jpg" alt="Developer's image" class="img-fluid" style="max-height: 150px;">
+            <p>Tshepi Keikanantses</p>
         </div>
 
     </main>
 
-    <footer>
-        <div>
+    <footer class="footer-container">
+        <div class="footerContent1">
             <img src="../images/website logo/background image.png" alt="logo" style="height: 25px;">
-            <p>
-                BOTS-HEALTHCARE HUB
-            </p>
-            <P>
-                Making health care accessiable and efficient for everyone.
-            </P>
+            <p>BOTS-HEALTHCARE HUB</p>
+            <p>Making health care accessible and efficient for everyone.</p>
         </div>
-        <div>
+        <div class="footerContent2">
             <img src="../images/icons/landing page icons/For patient.png" alt="Patient icon" style="height: 25px;">
-            <p>
-                For Patients
-            </p>
-            <p>
-                Book Appointment(s) <br> Find Doctors <br> Health Records
-            </p>
+            <p>For Patients</p>
+            <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
         </div>
-        <div>
+        <div class="footerContent3">
             <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon" style="height: 25px;">
-            <p>
-                For Healthcare Providers
-            </p>
-            <p>
-                Manage Appointments <br> Invntory Tracking <br>
-            </p>
+            <p>For Healthcare Providers</p>
+            <p>Manage Appointments <br> Inventory Tracking <br></p>
         </div>
-        <div>
+        <div class="footerContent4">
             <img src="../images/icons/landing page icons/Contact us.png" alt="Contacts icon" style="height: 25px;">
-             <p>
-                Contacts
-            </p>
-            <p>
-                +267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)
-            </p>
+            <p>Contacts</p>
+            <p>+267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)</p>
         </div>
-        <div>
-            <p>
-                (c) 2026 Botswana Health Care Hub. All Rights Reserved.
-            </p>
+        <div class="footerContent5">
+            <p>(c) 2026 Botswana Health Care Hub. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

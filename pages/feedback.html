@@ -3,174 +3,148 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOTS-HEALTHCARE HUB</title>
-    <link rel="stylesheet" href="../Style/styles.css">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-
-            <div class="logo">
-                <img src="../images/website logo/background image.png" alt="Logo" style="">
-            </div>
-
-                <ul class="nav-link">
-                    <li><a href="../index.html">Landing page</a></li>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
+    <!-- Responsive Navbar with Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2600FD;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/website logo/background image.png" alt="Logo" height="30" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Landing page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-info text-white fw-bold ms-lg-2" href="../pages/login.html">Log in</a>
+                    </li>
                 </ul>
-
-                <div>
-                    <a href="../pages/login.html">
-                        <button>
-                            Log in
-                        </button>
-                    </a>
-                </div>
-
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <div class="instruc">
-            <h2>
-                Please fill in the forms
-            </h2>
+    <main class="container-fluid py-4">
+        <div class="instruc text-center">
+            <h2>Please fill in the forms</h2>
         </div>
 
-        <form comments-frm>
-            <label>Comments</label>
-            <input type="text" comment="text">
-            
-        </form>
-        <form usefulness-frm>
-            <label>
-                How useful is this website?
-            </label>
-
-            <select>
-
-                <option>
-                    Very useful
-                </option> <br>
-
-                <option>
-                    Slightly useful
-                </option> <br>
-                
-                <option>
-                    Not useful
-                </option>
-
-            </select>
+        <form class="my-3">
+            <div class="mb-3">
+                <label class="form-label">Comments</label>
+                <input type="text" class="form-control" name="comment">
+            </div>
         </form>
 
-        <form suggestions-frm>
-            <label>
-                Reccomendatios
-            </label>
-
-            <input type="text" reccomendations="text">
+        <form class="my-3">
+            <div class="mb-3">
+                <label class="form-label">How useful is this website?</label>
+                <select class="form-select">
+                    <option>Very useful</option>
+                    <option>Slightly useful</option>
+                    <option>Not useful</option>
+                </select>
+            </div>
         </form>
 
-        <div id="choose">
+        <form class="my-3">
+            <div class="mb-3">
+                <label class="form-label">Recommendations</label>
+                <input type="text" class="form-control" name="recommendations">
+            </div>
+        </form>
+
+        <div id="choose" class="my-3">
             <form>
-                <p class="f-q">
-                    Have you ever visited this website before ?
+
+                <p class="f-q fw-bold">
+                    Have you ever visited this website before?
                 </p>
 
-                <label>
-                    <input type="radio" name="first-time" value="Yes">Yes
-                </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="first-time" value="Yes" id="visitYes">
+                    <label class="form-check-label" for="visitYes">
+                        Yes
+                    </label>
+                </div>
 
-                <label>
-                    <input type="radio" name="fisrt-time" value="No">No
-                </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="first-time" value="No" id="visitNo">
+                    <label class="form-check-label" for="visitNo">
+                        No
+                    </label>
+                </div>
 
-                <p class="s-q">
-                    Did you find assistant or what you were looking for?
+                <p class="s-q fw-bold mt-3">
+                    Did you find assistance or what you were looking for?
                 </p>
 
-                <label>
-                    <input type="radio" name="yes-I-did" value="all of it">Yes, all
-                </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="found" value="all of it" id="foundAll">
+                    <label class="form-check-label" for="foundAll">Yes, all</label>
+                </div>
 
-                <label>
-                    <input type="radio" name="i-did" value="not all of it">Yes, some
-                </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="found" value="not all of it" id="foundSome">
+                    <label class="form-check-label" for="foundSome">Yes, some</label>
+                </div>
 
-                <label>
-                    <input type="radio" name="Did not" value="No, I didn't">No, I didn't
-                </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="found" value="No, I didn't" id="foundNone">
+                    <label class="form-check-label" for="foundNone">No, I didn't</label>
+                </div>
 
-                <p class="rate">
-                    <div id="stars">
-
-                    </div>
-                </p>
-
+                <div id="stars" class="mt-3"></div>
+                
             </form>
         </div>
 
-        <button>
-            Send
-        </button>
+        <div class="text-center my-3">
+            <button class="btn btn-primary">Send</button>
+        </div>
 
-        <h1>
-            THANK YOU FOR YOR FEEDBACK
-        </h1>
-            
+        <h1 class="text-center">THANK YOU FOR YOUR FEEDBACK</h1>
     </main>
 
-    <footer>
-        <div>
+    <footer class="footer-container">
+        <div class="footerContent1">
             <img src="../images/website logo/background image.png" alt="logo" style="height: 25px;">
-            <p>
-                BOTS-HEALTHCARE HUB
-            </p>
-            <P>
-                Making health care accessiable and efficient for everyone.
-            </P>
+            <p>BOTS-HEALTHCARE HUB</p>
+            <p>Making health care accessible and efficient for everyone.</p>
         </div>
-        <div>
+        <div class="footerContent2">
             <img src="../images/icons/landing page icons/For patient.png" alt="Patient icon" style="height: 25px;">
-            <p>
-                For Patients
-            </p>
-            <p>
-                Book Appointment(s) <br> Find Doctors <br> Health Records
-            </p>
+            <p>For Patients</p>
+            <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
         </div>
-        <div>
+        <div class="footerContent3">
             <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon" style="height: 25px;">
-            <p>
-                For Healthcare Providers
-            </p>
-            <p>
-                Manage Appointments <br> Invntory Tracking <br>
-            </p>
+            <p>For Healthcare Providers</p>
+            <p>Manage Appointments <br> Inventory Tracking <br></p>
         </div>
-        <div>
+        <div class="footerContent4">
             <img src="../images/icons/landing page icons/Contact us.png" alt="Contacts icon" style="height: 25px;">
-             <p>
-                Contacts
-            </p>
-            <p>
-                +267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)
-            </p>
+            <p>Contacts</p>
+            <p>+267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)</p>
         </div>
-        <div>
-            <p>
-                (c) 2026 Botswana Health Care Hub. All Rights Reserved.
-            </p>
+        <div class="footerContent5">
+            <p>(c) 2026 Botswana Health Care Hub. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
