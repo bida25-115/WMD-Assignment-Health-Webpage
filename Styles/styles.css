@@ -6,6 +6,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    
 }
 
 /* Ensure all images are responsive */
@@ -31,8 +32,8 @@ img {
 }
 
 .nav-link:hover {
-    color: rgb(32, 168, 17) !important;
-    transition: 1.5s;
+    color: rgb(45, 255, 21) !important;
+    transition: 0.5s;
 }
 
 /* Footer Responsive */
@@ -49,6 +50,7 @@ img {
     min-width: 200px;
     text-align: center;
 }
+
 
 /* Main content text color for visibility on background */
 main {
@@ -120,5 +122,38 @@ main {
     .navbar-brand img {
         height: 25px !important;
     }
+}
+
+.footer-container{
+    padding-bottom: 0px;
+    background-color: rgb(24, 21, 108);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 0px;
+    
+}
+
+.footer-container .footerContent1, .footerContent2, .footerContent3, .footerContent4, .footerContent5, .p {
+    color: white;
+}
+
+.footerContent5{
+    margin-top: 170px;
+    padding-top: 0px;
+}
+
+.footerContent5 p{
+    width: 100%;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+.awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 200px;
 }
 
