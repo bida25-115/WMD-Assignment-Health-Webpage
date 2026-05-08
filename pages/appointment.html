@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        BOTS-HEALTHCARE HUB
+    </title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/styles.css">
+</head>
+
+<body>
+    <!-- Responsive Navbar with Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2600FD;">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="../images/website logo/background image.png" alt="Logo" height="30" class="d-inline-block align-text-top">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/feedback.html">Feedback</a></li>
+                    <li class="nav-item">
+            
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-1">
+        <h2>
+            To book appointment, please fill in the form below by entering your full names, email, date of appointment and type of service you want to book for.
+        </h2>
+    </section>
+
+    <section class="form-section">
+
+    <form onsubmit="return validateForm()" class="appointment-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="date" required>
+
+        <select required>
+
+            <option>
+                Online Doctor Consultation 
+            </option>
+
+            <option>
+                Xray 
+            </option>
+
+            <option>
+                Maternity 
+            </option>
+
+            <option>
+                Surgery 
+            </option>
+
+            <option>
+                Arbotion 
+            </option>
+
+            <option>
+                Dental
+            </option>
+
+            <option>
+                Pregnancy Checkup
+            </option>
+
+            <option>
+                Rehabilitation
+            </option>
+
+            <option>
+                Contraceptives
+            </option>
+
+            <option>
+                Prescription
+            </option>
+
+        </select>
+
+        <select required>
+
+            <option>
+                Ramokgonami clinic
+            </option>
+
+            <option>
+                Gaborone Private Hospital
+            </option>
+
+            <option>
+                Bokamoso Private Hospital
+            </option>
+
+            <option>
+                Bamalete Lutheran Hospital
+            </option>
+
+            <option>
+                Scottish Livingstone Hospital
+            </option>
+
+            <option>
+                Letsholathebe II Memorial Hospital
+            </option>
+
+            <option>
+                Princess Marina Hospital
+            </option>
+
+            <option>
+                Bontleng Hospital
+            </option>
+
+            <option>
+                Sefhare Hospital
+            </option>
+
+            <option>
+                Maun General Hospital
+            </option>
+
+            <option>
+                Ramotswa Hospital
+            </option>
+
+            <option>
+                Nyangabgwe Referral Hospital
+            </option>
+
+            <option>
+                Kanye Seventh-day Adventist Hospital
+            </option>
+
+            <option>
+                Mahalapye District Hospital
+            </option>
+
+            <option>
+                Sekgoma Memorial Hospital
+            </option>
+
+            <option>
+                Sbrana Psychiatric Hospital
+            </option>
+
+        </select>
+
+        <select name="Medical Specialists" required>
+
+            <option>
+                Dr. Tomson Ntebang -Online Doctor Consultation
+            </option>
+
+            <option>
+                Dr Mitchell Robet - Online Doctor Consultation
+            </option>
+
+            <option>
+                Dr. Tshegofatso Patricia Relaeng - Surgery
+            </option>
+
+            <option>
+                Dr. Boineelo Sepape - Xray
+            </option>
+
+            <option>
+                Vencatachellapathee Dickoerkorer - Xray
+            </option>
+
+            <option>
+                Dr. Phenyo Semadi - Prescription
+            </option>
+
+            <option>
+                Moakanyi Mogolo - Prescription
+            </option>
+
+            <option>
+                Dr. Mpho Rorisang - Rehabilitation
+            </option>
+
+            <option>
+                Dr.  Setshego Lela- Rehabilitation
+            </option>
+
+            <option>
+                Dr.  Sophie Sarah Britain - Maternity
+            </option>
+
+            <option>Dr maitumelo Gabaakoge - Maternity
+
+            </option>
+
+            <option>
+                Dr. Taylor Lockward - Dental
+            </option>
+
+            <option>
+                Dr Sechele Seithamo - Dental
+            </option>
+
+            <option>
+                Dr. Linda Anderso - Pregnancy Checkup
+            </option>
+
+            <option>
+                Dr.  Laone Mosepele - Pregnancy Checkup
+            </option>
+
+            <option>
+                Dr. Josephen Motaung - Contraceptives
+            </option>
+
+            <option>
+                Dr.  Maatla Serame - Contraceptives
+            </option>
+
+            <option>
+                Dr.  Antony Keikanantse - Arbotion
+            </option>
+
+            <option>
+                Dr Faith Mistakers - Arbortion
+            </option>
+
+        </select>
+
+
+
+        <select required>
+
+            <option>
+                08:00 - 10:00
+            </option>
+
+            <option>
+                10:00 - 12:00
+            </option>
+
+            <option>
+                12:00 - 14:00
+            </option>
+
+            <option>
+                14:00 - 16:00
+            </option>
+
+            <option>
+                16:00 - 18:00
+            </option>
+
+        </select>
+
+        <button type="submit">
+            Book Appointment
+        </button>
+
+    </form>
+
+
+    <footer class="footer-container">
+
+        <div class="footerContent1">
+            <img src="../images/website logo/background image.png" alt="logo" style="height: 25px; border-radius: 10px;">
+            <p>BOTS-HEALTHCARE HUB</p>
+            <p>Making health care accessible and efficient for everyone.</p>
+        </div>
+
+        <div class="footerContent2">
+            <img src="../images/icons/landing page icons/patient.png" alt="Patient icon" style="height: 25px;">
+            <p>For Patients</p>
+            <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
+        </div>
+
+        <div class="footerContent3">
+            <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon" style="height: 25px;">
+            <p>For Healthcare Providers</p>
+            <p>Manage Appointments <br> Inventory Tracking <br></p>
+        </div>
+
+        <div class="footerContent4">
+            <img src="../images/icons/landing page icons/contact-us.png" alt="Contacts icon" style="height: 25px;">
+            <p>Contacts</p>
+            <p><img src="../images/icons/landing page icons/mascom.png" style="width: 20px; height: 20px; border-radius: 10px;"> +267 753 541 12 <br><img src="../images/icons/landing page icons/Orange.png" style="width: 20px; height: 20px;"> +267 785 389 54 <br> <img src="../images/icons/landing page icons/BTC.jpg" style="width: 20px; height: 20px;"> +267 738 622 99 </p>
+        </div>
+
+        <div class="footerContent5">
+            <p>(c) 2026 Botswana Health Care Hub. All Rights Reserved.</p>
+        </div>
+        
+    </footer>
+
+
+</body>
+</html>
