@@ -1,0 +1,232 @@
+body {
+    background-image: linear-gradient(rgba(0, 34, 102, 0.75), rgba(0, 34, 102, 0.75)), url("../images/background/services background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.header {
+    background-color: rgba(38, 0, 253, 0.95) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #7CFF00;
+}
+
+.btn-login {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    color: white;
+}
+
+.btn-login:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.home-main {
+    padding-top: 0;
+}
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(6, 19, 68, 0.8);
+}
+
+.hero-overlay {
+    display: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    background: rgba(124, 255, 0, 0.18);
+    color: #b9ff18;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 0.04em;
+}
+
+.hero-title {
+    font-size: clamp(2.25rem, 5vw, 4rem);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    max-width: 620px;
+    font-size: 1.05rem;
+    margin-bottom: 1.75rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.guide-row {
+    margin-top: 2rem;
+}
+
+.guide-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 24px;
+    padding: 1.5rem;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guide-card h5 {
+    color: #ffffff;
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+}
+
+.guide-card p {
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0;
+}
+
+.features-section {
+    padding: 40px 0 80px;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 22px;
+    padding: 2rem 1.5rem;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.14);
+}
+
+.feature-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 1.25rem;
+}
+.feature-card p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.footer-container {
+    background-color: rgba(10, 12, 74, 0.95);
+    padding: 40px 24px 35px;
+}
+
+.footerContent1,
+.footerContent2,
+.footerContent3,
+.footerContent4 {
+    text-align: left;
+    color: #fff;
+}
+
+.footerContent5 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-title {
+    font-weight: 700;
+    margin: 0.75rem 0 0.6rem;
+}
+
+.footerContent1 img,
+.footerContent2 img,
+.footerContent3 img,
+.footerContent4 img {
+    height: 32px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        min-height: 560px;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-login {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .hero-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .guide-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+}

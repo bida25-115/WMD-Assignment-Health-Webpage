@@ -11,8 +11,8 @@
 
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2600FD;">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="navbar-container">
             <a class="navbar-brand" href="#">
                 <img src="../images/website logo/background image.png" alt="Logo" height="30" class="d-inline-block align-text-top">
             </a>
@@ -20,125 +20,109 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html"></a></li>
+                <ul class="navbar-nav ms-auto nav-center">
                     <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link active-nav" href="feedback.html">Feedback</a></li>
                     <li class="nav-item">
-                        <a class="btn btn-info text-white fw-bold ms-lg-2" href="../pages/login.html">Log in</a>
+                        <a class="btn btn-login" href="login.html">Log in</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container-fluid py-4">
-        <div class="instruc text-center">
-            <h2>Please fill in the forms</h2>
+    <main class="container py-5">
+        <div class="instruc text-center mb-4">
+            <h2>Please fill in the feedback form</h2>
+            <p class="text-white-50">Your input helps us improve the website and the service experience.</p>
         </div>
 
-        <form class="my-3">
-            <div class="mb-3">
+        <form class="mx-auto" style="max-width: 860px;" novalidate>
+            <div class="mb-4">
                 <label class="form-label">Comments</label>
-                <input type="text" class="form-control" name="comment">
+                <input type="text" class="form-control" name="comment" placeholder="Enter your comments">
             </div>
-        </form>
 
-        <form class="my-3">
-            <div class="mb-3">
+            <div class="mb-4">
                 <label class="form-label">How useful is this website?</label>
-                <select class="form-select">
+                <select class="form-select" name="usefulness">
+                    <option selected disabled>Choose an option</option>
                     <option>Very useful</option>
                     <option>Slightly useful</option>
                     <option>Not useful</option>
                 </select>
             </div>
-        </form>
 
-        <form class="my-3">
-            <div class="mb-3">
+            <div class="mb-4">
                 <label class="form-label">Recommendations</label>
-                <input type="text" class="form-control" name="recommendations">
+                <textarea class="form-control" name="recommendations" rows="4" placeholder="What would you like us to improve?"></textarea>
             </div>
-        </form>
 
-        <div id="choose" class="my-3">
-            <form>
-
-                <p class="f-q fw-bold">
-                    Have you ever visited this website before?
-                </p>
-
+            <fieldset class="mb-4 border rounded-3 p-3 bg-dark bg-opacity-10">
+                <legend class="fs-6 fw-bold px-2">Have you ever visited this website before?</legend>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="first-time" value="Yes" id="visitYes">
-                    <label class="form-check-label" for="visitYes">
-                        Yes
-                    </label>
+                    <label class="form-check-label" for="visitYes">Yes</label>
                 </div>
-
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="first-time" value="No" id="visitNo">
-                    <label class="form-check-label" for="visitNo">
-                        No
-                    </label>
+                    <label class="form-check-label" for="visitNo">No</label>
                 </div>
+            </fieldset>
 
-                <p class="s-q fw-bold mt-3">
-                    Did you find assistance or what you were looking for?
-                </p>
-
+            <fieldset class="mb-4 border rounded-3 p-3 bg-dark bg-opacity-10">
+                <legend class="fs-6 fw-bold px-2">Did you find assistance or what you were looking for?</legend>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="found" value="all of it" id="foundAll">
                     <label class="form-check-label" for="foundAll">Yes, all</label>
                 </div>
-
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="found" value="not all of it" id="foundSome">
+                    <input class="form-check-input" type="radio" name="found" value="some" id="foundSome">
                     <label class="form-check-label" for="foundSome">Yes, some</label>
                 </div>
-
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="found" value="No, I didn't" id="foundNone">
+                    <input class="form-check-input" type="radio" name="found" value="none" id="foundNone">
                     <label class="form-check-label" for="foundNone">No, I didn't</label>
                 </div>
+            </fieldset>
 
-                <div id="stars" class="mt-3"></div>
-                
-            </form>
-        </div>
+            <div class="text-center mb-4">
+                <button type="submit" class="btn btn-primary btn-lg px-5">Send Feedback</button>
+            </div>
 
-        <div class="text-center my-3">
-            <button class="btn btn-primary">Send</button>
-        </div>
-
-        <h1 class="text-center">THANK YOU FOR YOUR FEEDBACK</h1>
+            <div class="text-center">
+                <h3 class="text-white">THANK YOU FOR YOUR FEEDBACK</h3>
+            </div>
+        </form>
     </main>
 
     <footer class="footer-container">
-        <div class="footerContent1">
-            <img src="../images/website logo/background image.png" alt="logo" style="height: 25px; border-radius: 10px;">
-            <p>BOTS-HEALTHCARE HUB</p>
-            <p>Making health care accessible and efficient for everyone.</p>
+        <div class="footer-panel">
+            <div class="footerContent1">
+                <img src="../images/website logo/background image.png" alt="logo">
+                <p>BOTS-HEALTHCARE HUB</p>
+                <p>Making health care accessible and efficient for everyone.</p>
+            </div>
+            <div class="footerContent2">
+                <img src="../images/icons/landing page icons/patient.png" alt="Patient icon">
+                <p>For Patients</p>
+                <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
+            </div>
+            <div class="footerContent3">
+                <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon">
+                <p>For Healthcare Providers</p>
+                <p>Manage Appointments <br> Inventory Tracking</p>
+            </div>
+            <div class="footerContent4">
+                <img src="../images/icons/landing page icons/contact-us.png" alt="Contacts icon">
+                <p>Contacts</p>
+                <p>+267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)</p>
+            </div>
         </div>
-        <div class="footerContent2">
-            <img src="../images/icons/landing page icons/patient.png" alt="Patient icon" style="height: 30px;">
-            <p>For Patients</p>
-            <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
-        </div>
-        <div class="footerContent3">
-            <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon" style="height: 25px;">
-            <p>For Healthcare Providers</p>
-            <p>Manage Appointments <br> Inventory Tracking <br></p>
-        </div>
-        <div class="footerContent4">
-            <img src="../images/icons/landing page icons/contact-us.png" alt="Contacts icon" style="height: 25px;">
-            <p>Contacts</p>
-            <p>+267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)</p>
-        </div>
-        <div class="footerContent5">
+        <div class="footer-bottom">
             <p>(c) 2026 Botswana Health Care Hub. All Rights Reserved.</p>
         </div>
     </footer>

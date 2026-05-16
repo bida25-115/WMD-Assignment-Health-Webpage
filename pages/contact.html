@@ -11,8 +11,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2600FD;">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="navbar-container">
             <a class="navbar-brand" href="#">
                 <img src="../images/website logo/background image.png" alt="Logo" height="30" class="d-inline-block align-text-top">
             </a>
@@ -20,80 +20,80 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html"></a></li>
+                <ul class="navbar-nav ms-auto nav-center">
                     <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link active-nav" href="contact.html">Contact us</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
                     <li class="nav-item">
-                        <a class="btn btn-info text-white fw-bold ms-lg-2" href="login.html">Log in</a>
+                        <a class="btn btn-login" href="login.html">Log in</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container-fluid py-4">
+    <main class="container py-5">
+        <div class="contact-card mx-auto p-4 p-lg-5 rounded-4" style="max-width: 900px; background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.16);">
+            <div class="text-center mb-4">
+                <h1 class="text-white">CONTACT US</h1>
+                <p class="text-white-50">We will respond to your message within 24 hours.</p>
+                <p class="text-white-50">Fill out the form below to get in touch, or call +267 753 541 12 / 758 389 54 / 738 622 99.</p>
+            </div>
 
-        <div class="contact-text text-center">
-            <h1>CONTACT US</h1>
+            <form class="row g-4" novalidate>
+                <div class="col-12 col-md-6">
+                    <label class="form-label text-white">First Name*</label>
+                    <input type="text" class="form-control" name="name" placeholder="First Name" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label text-white">Last Name*</label>
+                    <input type="text" class="form-control" name="surname" placeholder="Last Name" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label text-white">Email address*</label>
+                    <input type="email" class="form-control" name="email" placeholder="youremail@example.com" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label text-white">Phone number</label>
+                    <input type="tel" class="form-control" name="phone" placeholder="+267 7XX XXX XXX">
+                </div>
+                <div class="col-12">
+                    <label class="form-label text-white">Message</label>
+                    <textarea class="form-control" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg px-5">Submit</button>
+                </div>
+            </form>
         </div>
-
-        <div class="feedback-time text-center my-3">
-            <p>We will respond to your messages within 24 hours</p>
-        </div>
-
-        <div class="instruction text-center px-3 my-3">
-            <p>Fill out the forms and we will be in touch soon! For more inquiry reach out directly at <br>(+267) 753 541 12/ 758 389 54/ 738 622 99 or email us @ botshealthcarehub@gmail.com for fast and more detailed response.</p>
-        </div>
-
-        <form class="row g-3 justify-content-center">
-            <div class="col-12 col-md-6">
-                <label class="form-label">First Name*:</label>
-                <input type="text" class="form-control" name="name" required>
-            </div>
-            <div class="col-12 col-md-6">
-                <label class="form-label">Last Name*:</label>
-                <input type="text" class="form-control" name="surname" required>
-            </div>
-            <div class="col-12 col-md-6">
-                <label class="form-label">Enter email*:</label>
-                <input type="email" class="form-control" name="email" required>
-            </div>
-            <div class="col-12 col-md-6">
-                <label class="form-label">Comment:</label>
-                <textarea class="form-control" name="Message" rows="4" required></textarea>
-            </div>
-            <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
     </main>
 
     <footer class="footer-container">
-        <div class="footerContent1">
-            <img src="../images/website logo/background image.png" alt="logo" style="height: 25px; border-radius: 10px;">
-            <p>BOTS-HEALTHCARE HUB</p>
-            <p>Making health care accessible and efficient for everyone.</p>
+        <div class="footer-panel">
+            <div class="footerContent1">
+                <img src="../images/website logo/background image.png" alt="logo">
+                <p><strong>BOTS-HEALTHCARE HUB</strong></p>
+                <p>Making health care accessible and efficient for everyone.</p>
+            </div>
+            <div class="footerContent2">
+                <img src="../images/icons/landing page icons/patient.png" alt="Patient icon">
+                <p><strong>For Patients</strong></p>
+                <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
+            </div>
+            <div class="footerContent3">
+                <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon">
+                <p><strong>For Healthcare Providers</strong></p>
+                <p>Manage Appointments <br> Inventory Tracking</p>
+            </div>
+            <div class="footerContent4">
+                <img src="../images/icons/landing page icons/contact-us.png" alt="Contacts icon">
+                <p><strong>Contacts</strong></p>
+                <p>+267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)</p>
+            </div>
         </div>
-        <div class="footerContent2">
-            <img src="../images/icons/landing page icons/patient.png" alt="Patient icon" style="height: 30px;">
-            <p>For Patients</p>
-            <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
-        </div>
-        <div class="footerContent3">
-            <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon" style="height: 25px;">
-            <p>For Healthcare Providers</p>
-            <p>Manage Appointments <br> Inventory Tracking <br></p>
-        </div>
-        <div class="footerContent4">
-            <img src="../images/icons/landing page icons/contact-us.png" alt="Contacts icon" style="height: 25px;">
-            <p>Contacts</p>
-            <p>+267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)</p>
-        </div>
-        <div class="footerContent5">
+        <div class="footer-bottom">
             <p>(c) 2026 Botswana Health Care Hub. All Rights Reserved.</p>
         </div>
     </footer>

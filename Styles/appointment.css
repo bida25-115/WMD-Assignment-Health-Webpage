@@ -1,0 +1,95 @@
+/* Appointment page styles: hero background, overlay, and form layout */
+
+.appointment-hero {
+    position: relative;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.9);
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9));
+    mix-blend-mode: normal;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    color: white;
+}
+
+.hero-instruction {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    color: #111;
+}
+
+.appointment-form select {
+    appearance: none;
+}
+
+.appointment-form .submit-btn {
+    background: linear-gradient(180deg,#2b7bff,#085bff);
+    border: 2px solid rgba(255,255,255,0.25);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+/* center the submit button and add spacing */
+.appointment-form .col-12.text-center {
+    margin-top: 6px;
+}
+
+/* Footer adjustments for visual separation */
+.footer-container {
+    margin-top: 18px;
+    background-color: rgba(10,12,74,0.95);
+    padding: 28px 20px;
+}
+
+@media (max-width: 767px) {
+    .appointment-hero {
+        min-height: 640px;
+        padding: 30px 0;
+    }
+
+    .hero-instruction {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .appointment-form input,
+    .appointment-form select {
+        padding: 12px 12px;
+        border-radius: 6px;
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,111 +7,140 @@
     <title>BOTS-HEALTHCARE HUB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/home.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2600FD;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="home.html">
                 <img src="../images/website logo/background image.png" alt="Logo" height="30" class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html"></a></li>
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <ul class="navbar-nav ms-auto nav-center">
+                    <li class="nav-item"><a class="nav-link active-nav" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
                     <li class="nav-item">
-                        <a class="btn btn-info text-white fw-bold ms-lg-2" href="../pages/login.html">Login</a>
+                        <a class="btn btn-login" href="login.html">Log in</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container-fluid py-4 main-body">
-
-        <section class="guide row g-4 mb-4">
-            <div class="col-12 col-md-4 text-center">
-                <p class="fw-bold">1.Create Account</p>
-                <p>Register as a Patient or Professional</p>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-                <p class="fw-bold">2.Book Appointment(s)</p>
-                <p>Choose your doctor and preferred timeslot(s)</p>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-                <p class="fw-bold">3.Receive Care</p>
-                <p>Get Reminders and attend consultation(s)</p>
+    <main class="home-main">
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container position-relative hero-content py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-white">
+                        <span class="hero-badge">BOTS-HEALTHCARE HUB</span>
+                        <h2 class="hero-title">Book care, manage appointments, and stay connected with your health team.</h2>
+                        <p class="hero-description">Trusted patient, doctor, and staff portals designed for fast booking, secure records, and timely reminders.</p>
+                        <a href="appointment.html" class="btn btn-primary btn-lg">Book Appointment</a>
+                    </div>
+                </div>
+                <div class="row guide-row g-3 mt-5">
+                    <div class="col-12 col-md-4">
+                        <div class="guide-card text-center">
+                            <h5>1. Create Account</h5>
+                            <p>Register as a patient or professional.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="guide-card text-center">
+                            <h5>2. Book Appointment</h5>
+                            <p>Choose your doctor and preferred timeslot(s).</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="guide-card text-center">
+                            <h5>3. Receive Care</h5>
+                            <p>Get reminders and attend your consultations.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        <section class="tasks row g-4">
-            <div class="col-12 col-sm-6 col-lg-4 text-center">
-                <img src="../images/icons/ICONS/home page icons/schedule.png" alt="Schedule icon" style="height: 30px;">
-                <p>Schedule consultations with healthcare Professionals in just few clicks.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 text-center">
-                <img src="../images/icons/ICONS/home page icons/reminders.png" alt="Reminders icon" style="height: 30px;">
-                <p>Never miss an appointment with automated reminder notifications.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 text-center">
-                <img src="../images/icons/ICONS/home page icons/separate portals.png" alt="Portals icon" style="height: 30px;">
-                <p>Separate Portals for patients, doctors and medical staff.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 text- center">
-                <img src="../images/icons/ICONS/home page icons/view-doctors-schedule.png" alt="View Schedules icon" style="height: 30px;">
-                <p>View doctors schedules and available time slots instantly.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 text-center">
-                <img src="../images/icons/ICONS/home page icons/security.png" alt="Security icon" style="height: 30px;">
-                <p>Your information is securely protected with industry standard security.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 text-center">
-                <img src="../images/icons/ICONS/home page icons/medical staff tracking.png" alt="Medical staff icon" style="height: 30px;">
-                <p>Medical staff can track supplies and equipments efficiently.</p>
-            </div>
 
-            <div style="text-decoration: none; color: white; display: flex; justify-content: center; margin-top: 20px;">
-                <button style="background-color: #2600FD; border: none; padding: 10px 20px; border-radius: 5px;">
-                    <a href="../pages/appointment.html" class="bk-ap-btn">Book Appointment</a>
-                </button>
+        <section class="features-section container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <img src="../images/icons/ICONS/home page icons/schedule.png" alt="Schedule icon" style="width: 100px;  height: 100px;">
+                        <p>
+                            Schedule consultations with healthcare professionals in just a few clicks.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <img src="../images/icons/ICONS/home page icons/reminders.png" alt="Reminders icon" style="width: 100px; height: 100px;">
+                        <p>Never miss an appointment with automated reminder notifications.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <img src="../images/icons/ICONS/home page icons/separate portals.png" alt="Portals icon" style="width: 100px; height: 100px;">
+                        <p>Separate portals for patients, doctors, and medical staff.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <img src="../images/icons/ICONS/home page icons/view-doctors-schedule.png" alt="View Schedule icon" style="width: 100px; height: 100px;">
+                        <p>View doctors' schedules and available time slots instantly.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <img src="../images/icons/ICONS/home page icons/security.png" alt="Security icon" style="width: 100px; height: 100px;">
+                        <p>Your security information is protected with industry standard security.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <img src="../images/icons/ICONS/home page icons/medical staff tracking.png" alt="Medical staff icon" style="width: 100px; height: 100px;">
+                        <p>Medical staff can track supplies and equipment efficiently.</p>
+                    </div>
+                </div>
             </div>
-
         </section>
-
     </main>
 
     <footer class="footer-container">
-        <div class="footerContent1">
-            <img src="../images/website logo/background image.png" alt="logo" style="height: 25px; border-radius: 10px;">
-            <p>BOTS-HEALTHCARE HUB</p>
-            <p>Making health care accessible and efficient for everyone.</p>
+        <div class="footer-panel">
+            <div class="footerContent1">
+                <img src="../images/website logo/background image.png" alt="logo">
+                <p class="footer-title">BOTS-HEALTHCARE HUB</p>
+                <p>Making health care accessible and efficient for everyone.</p>
+            </div>
+            <div class="footerContent2">
+                <img src="../images/icons/landing page icons/patient.png" alt="Patient icon">
+                <p class="footer-title">For Patients</p>
+                <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
+            </div>
+            <div class="footerContent3">
+                <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon">
+                <p class="footer-title">For Healthcare Providers</p>
+                <p>Manage Appointments <br> Inventory Tracking</p>
+            </div>
+            <div class="footerContent4">
+                <img src="../images/icons/landing page icons/contact-us.png" alt="Contacts icon">
+                <p class="footer-title">Contacts</p>
+                <p> <img src="../images/icons/landing page icons/mascom.png" alt="Mascom icon" style="border-radius: 20px; width: 20px; height: 20px;">+267 753 541 12  <br> <img src="../images/icons/landing page icons/Orange.png" alt="Orange icon" style="width: 20px; height: 20px;"> +267 785 389 54 <br> <img src="../images/icons/landing page icons/BTC.jpg" alt="Bemobile icon" style="width: 20px; height: 20px;"> +267 738 622 99</p>
+            </div>
         </div>
-        <div class="footerContent2">
-            <img src="../images/icons/landing page icons/patient.png" alt="Patient icon" style="height: 30px;">
-            <p>For Patients</p>
-            <p>Book Appointment(s) <br> Find Doctors <br> Health Records</p>
-        </div>
-        <div class="footerContent3">
-            <img src="../images/icons/landing page icons/For healthcare providers.png" alt="Healthcare Providers icon" style="height: 25px;">
-            <p>For Healthcare Providers</p>
-            <p>Manage Appointments <br> Inventory Tracking <br></p>
-        </div>
-        <div class="footerContent4">
-            <img src="../images/icons/landing page icons/contact-us.png" alt="Contacts icon" style="height: 25px;">
-            <p>Contacts</p>
-            <p>+267 753 541 12 (Mascom) <br> +267 785 389 54 (Orange) <br> +267 738 622 99 (Bemoble)</p>
-        </div>
-        <div class="footerContent5">
-            <p>(c) 2026 Botswana Health Care Hub. All Rights Reserved.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Botswana Health Care Hub. All Rights Reserved.</p>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
