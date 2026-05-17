@@ -38,8 +38,21 @@
                 return;
             }
 
-            loginMessage.textContent = 'Login successful!';
+            loginMessage.textContent = 'Login successful! Redirecting...';
             loginMessage.classList.remove('d-none');
             loginMessage.classList.add('alert', 'alert-success');
             loginForm.reset();
+
+            // Save login state to localStorage
+            localStorage.setItem('isLoggedIn', 'true');
+            localStorage.setItem('userEmail', emailValue);
+
+            // Get return URL from URL parameters or default to appointment page
+            const urlParams = new URLSearchParams(window.location.search);
+            const returnUrl = urlParams.get('returnUrl') || 'appointment.html';
+
+            // Redirect after a short delay to show success message
+            setTimeout(() => {
+                window.location.href = returnUrl;
+            }, 1000);
         });
