@@ -497,11 +497,20 @@ main {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-container {
+    height: 450px;
+}
+
 .footer-container .footerContent1,
 .footer-container .footerContent2,
 .footer-container .footerContent3,
 .footer-container .footerContent4 {
     color: white;
+}
+
+.footer-bottom{
+    margin-top: 350px;
+    margin-left: -1500px;
 }
 
 /* Responsive landing page */

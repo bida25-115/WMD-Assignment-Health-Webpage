@@ -184,3 +184,12 @@
         border-width: 8px;
     }
 }
+
+.footer-container {
+    height: 450px;
+}
+
+.footer-bottom {
+    margin-top: 350px;
+    margin-left: -1500px;
+}

@@ -9,6 +9,8 @@ body {
 
 .profile-main {
     min-height: calc(100vh - 80px);
+    /* ensure space for footer so content won't overlap */
+    padding-bottom: 220px;
 }
 
 .profile-hero {
@@ -230,4 +232,142 @@ body {
     .profile-card {
         border-radius: 22px;
     }
+}
+
+/* Profile page — footer styling to match reference image */
+.profile-main + .footer-container {
+    padding: 36px 22px 60px;
+    background: transparent;
+}
+
+.profile-main + .footer-container .footer-panel {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 22px;
+    border-radius: 18px;
+    background: rgba(8,8,60,0.95);
+    box-shadow: 0 18px 60px rgba(8,12,60,0.45);
+    border: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.profile-main + .footer-container .footer-panel::before {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.03);
+    pointer-events: none;
+}
+
+.profile-main + .footer-container .footer-panel .footerContent1,
+.profile-main + .footer-container .footer-panel .footerContent2,
+.profile-main + .footer-container .footer-panel .footerContent3,
+.profile-main + .footer-container .footer-panel .footerContent4 {
+    flex: 1 1 0;
+    min-width: 220px;
+    background: rgba(21,18,92,0.95);
+    border-radius: 12px;
+    padding: 34px 26px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.06);
+    min-height: 220px;
+}
+
+.profile-main + .footer-container .footer-panel .footerContent1 img,
+.profile-main + .footer-container .footer-panel .footerContent2 img,
+.profile-main + .footer-container .footer-panel .footerContent3 img,
+.profile-main + .footer-container .footer-panel .footerContent4 img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 14px;
+    padding: 10px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.06);
+}
+
+.profile-main + .footer-container .footer-panel p {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+.profile-main + .footer-container .footer-bottom {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.profile-main + .footer-container .footer-bottom p {
+    display: inline-block;
+    background: rgba(10,12,48,0.96);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,0.06);
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .profile-main + .footer-container .footer-panel {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 18px;
+    }
+
+    .profile-main + .footer-container .footer-panel .footerContent1,
+    .profile-main + .footer-container .footer-panel .footerContent2,
+    .profile-main + .footer-container .footer-panel .footerContent3,
+    .profile-main + .footer-container .footer-panel .footerContent4 {
+        min-width: 45%;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-main + .footer-container .footer-panel .footerContent1,
+    .profile-main + .footer-container .footer-panel .footerContent2,
+    .profile-main + .footer-container .footer-panel .footerContent3,
+    .profile-main + .footer-container .footer-panel .footerContent4 {
+        min-width: 100%;
+    }
+}
+
+/* Ensure footer stays in normal flow and doesn't overlap content */
+.footer-container {
+    position: static;
+    z-index: 0;
+    margin-top: 275px;
+}
+
+.footer-panel {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.footerContent1
+.footerContent2
+.footerContent3
+.footerContent4 {
+    flex: 1 1 250px !important;
+    max-width: 300px !important;
+}
+
+.footer-bottom {
+    display: block !important;
+    width: 100% !important;
+    flex-basis: 100% !important;
+    clear: both !important;
+    text-align: center !important;
+    margin-top: 40px !important;
 }
