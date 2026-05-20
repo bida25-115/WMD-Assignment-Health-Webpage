@@ -138,8 +138,7 @@ main {
         flex: 1 1 45%;
     }
 }
-
-/* Mobile phones */
+/* On mobile phones*/
 @media (max-width: 768px) {
     body {
         background-attachment: scroll;
@@ -167,8 +166,7 @@ main {
         font-size: 1.2rem;
     }
 }
-
-/* Small mobile phones */
+/* Small mobile phones*/
 @media (max-width: 576px) {
     main h1 {
         font-size: 1.5rem;
@@ -499,6 +497,7 @@ main {
 
 .footer-container {
     height: 450px;
+    width: 100%;
 }
 
 .footer-container .footerContent1,
@@ -509,7 +508,7 @@ main {
 }
 
 .footer-bottom{
-    margin-top: 350px;
+    margin-top: 270px;
     margin-left: -1500px;
 }
 
